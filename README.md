@@ -20,3 +20,6 @@ Para montar o binário final contendo o bootloader e o programa em C foi utiliza
 - cat boot.bin kernel.bin > os_disk.bin
 
 O bootloader tem 512 bytes e ocupou o primeiro setor do disco, o segundo setor começa imediatamente com o binário do programa em C.
+
+Para executar o bootloader com o QEMU basta:
+- qemu-system-i386 -fda os_disk.bin
