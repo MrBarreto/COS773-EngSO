@@ -9,3 +9,4 @@ Nesse primeiro trabalho, o objetivo primordial era escrever um bootloader que ca
 - INT 0x10: Escreve o resultado na tela, utiliza os registradores AH para o teletype output, AL para o caractere a ser escrito, Bh para a página de vídeo e BL para a cor do texto.
 
 O bootloader é carregado pela BIOS na memória no endereço 0x7C00 e é lido do boot sector, os primeiros 512 bytes de um dispositivo bootável.
+
